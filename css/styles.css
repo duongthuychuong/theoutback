@@ -70,7 +70,18 @@ body {
     z-index: 1000;
     background: transparent;
     top: -10px;
+    transition: background-color 0.3s ease-in-out;
 }
+.navbar.scrolled{
+    background: rgba(255, 255, 255, 0.9);
+}
+.navbar.scrolled .hamburger{
+    color: black !important; 
+}
+.navbar.scrolled .title {
+    color: black !important; 
+}
+
 .logo img {
     height: auto;
     max-width: 100%;
@@ -87,6 +98,8 @@ body {
     font-size: 45px;
     cursor: pointer;
     color: #ffffff;
+   
+   
 }
 /* Responsive */
 @media (min-width: 768px) {
@@ -132,3 +145,10 @@ body {
 h1 span {
     display: block;
 }
+
+
+
+
+
+
+
