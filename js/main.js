@@ -3,9 +3,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     window.addEventListener("scroll", function () {
         if (window.scrollY > 50) {
-            navbar.classList.add("scrolled"); // Thêm lớp khi cuộn
+            navbar.classList.add("scrolled"); 
         } else {
-            navbar.classList.remove("scrolled"); // Gỡ lớp khi quay lại đầu trang
+            navbar.classList.remove("scrolled"); 
         }
     });
 });

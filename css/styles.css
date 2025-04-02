@@ -73,13 +73,13 @@ body {
     transition: background-color 0.3s ease-in-out;
 }
 .navbar.scrolled{
-    background: rgba(255, 255, 255, 0.9);
+    background: var(--color-white);
 }
 .navbar.scrolled .hamburger{
-    color: black !important; 
+    color: black ; 
 }
 .navbar.scrolled .title {
-    color: black !important; 
+    color: black ; 
 }
 
 .logo img {
@@ -142,7 +142,7 @@ body {
     background-color: white;
     color: #000000;
 }
-h1 span {
+.navbar .title h1 span {
     display: block;
 }
 
