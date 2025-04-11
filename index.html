@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,7 @@
     <!-- JavaScript -->
     <script src="/js/main.js"></script>
 </head>
+
 <body>
     <!-- Header -->
     <header>
@@ -18,21 +20,39 @@
             <div class="logo">
                 <img src="img/logo.png" alt="Logo">
             </div>
-            <div class="title"><h1><span>THE OUTBACK</span><span>F&B SERVICE</span></h1></div>
-            <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;700&display=swap" rel="stylesheet">
-            <div class="menu">
-                <div class="hamburger">&#9776;</div>
+            <div class="title">
+                <h1><span>THE OUTBACK</span><span>F&B SERVICE</span></h1>
             </div>
+            <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;700&display=swap" rel="stylesheet">
+            <div id="menu" onclick="onClickMenu()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </div>
+
         </nav>
+        <div id="nav-change-container" class="nav-change-container">
+            <div id="menu" onclick="onClickMenu()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </div>
+            <ul class="nav" id="nav">
+                <li><a href="#">Story</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
         <div class="hero">
             <img src="img/background.png" alt="Food">
             <a href="#" class="menu-button">Our menu</a>
         </div>
+
     </header>
 
     <!-- Main Content -->
     <main id="main">
-        THIS IS MAIN 
+        THIS IS MAIN
     </main>
 
     <!-- Footer -->
@@ -43,4 +63,5 @@
     <!-- JavaScript -->
     <script src="js/theme.js"></script>
 </body>
+
 </html>
