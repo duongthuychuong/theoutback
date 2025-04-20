@@ -61,7 +61,7 @@ body {
 .navbar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: left  ;
     padding: 10px 10px;
     width: 100%;
     position: fixed;
@@ -80,7 +80,7 @@ body {
     color: var(--color-white);
     font-size: 20px;
     font-weight: bold;
-    text-align: center;
+    text-align: left;
     line-height: 1.2;
     white-space: nowrap; 
 }
@@ -109,7 +109,7 @@ body {
     color: var(--color-white);
     font-size: 15px;
     font-weight: bold;
-    text-align: center;
+    text-align: left;
     line-height: 1.2;
 }
 
@@ -254,35 +254,68 @@ body {
     flex-direction: column; /* Stack items vertically */
     justify-content: flex-start;
     }
-    
+    .logo img {
+        height: auto;
+        width: 160px;
+    }
     .navbar {
+        display: flex;
+        align-items: center;
         justify-content: space-between;
         padding: 10px 40px;
     }
 
     .navbar .title {
-        text-align: center;
-        font-size: 20px;
+        text-align: left;
+        font-size: 45px;
+        left: 320px;
+        gap: 12px ;
     }
 
     .desktop-nav {
+        font-family: var(--font-family);
         display: flex;
-        gap: 35px;
+        gap: 100px;
         list-style: none;
-        font-size: 25px;
+        font-size: 70px;
+        right: 20px;
     }
 
     .desktop-nav li a {
+        position: relative;
         text-decoration: none;
         color: var(--color-white);
-        font-weight: bold;
+        transition: color 0.3s ease;
     }
 
-    .desktop-nav li a:hover {
-        color: var(--color-black);
-        text-underline-offset: 4px;
-        text-decoration: underline;
+    .desktop-nav li a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -4px; 
+        width: 0%;
+        height: 5px;
+        background-color: black; 
+        transition: width 0.3s ease-in-out;
+
     }
+    .desktop-nav li a:hover::after {
+        width: 100%;
+    }
+    #title1 {
+        text-align: left;
+    }
+
+    #title2 {
+        text-align: right;
+        margin-left: 200px; 
+    }
+    .navbar .title {
+        margin-left: 200px; 
+        top: 30px;
+      
+    }
+
 }
 
 /* MOBILE */
@@ -293,8 +326,11 @@ body {
     #menu {
         display: block; 
     }
-    
+    #title1, #title2 {
+        text-align: center; 
+    }
 }
+
 
 
 
